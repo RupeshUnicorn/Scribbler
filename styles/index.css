@@ -1,0 +1,58 @@
+/* Included all styles related to index.html */
+
+/* styles for body tag under index.html */
+body{
+  background-image: url(../images/background.jpg);
+  overflow:hidden;
+  }
+
+/* styles for post button */  
+.postButtons{
+    display:block;
+    margin:auto;
+    position:absolute;
+    top: 48%;
+    left:42%;
+ }
+
+/* styles for all post button */ 
+ #all-posts{
+    height: 30px;
+    background-color: rgb(231, 188, 18);
+    padding: 3px 10px;
+    color:black;
+    width: 100px;
+}
+
+/* styles for create post modal section */
+#create-post{
+    height: 30px;
+    background-color: rgb(231, 188, 18);
+    padding: 3px 10px;
+    color:black;
+    width: 100px;
+}
+
+/* styles for post modal content */ 
+.post-modal-content{
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    height: 70%;
+    overflow: auto;
+  }
+
+/* styles for create button */  
+.create-btn{
+    margin-top: 10px;
+    background-color: green;
+    font-size: 14px;
+    width:100px;
+    color: white;
+    padding: 10px;
+    align-self: center;
+    font-family: Abel;
+  }
+/* End of styles for index.css */    
