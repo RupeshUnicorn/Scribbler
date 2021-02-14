@@ -1,0 +1,180 @@
+/* Included all styles related to postslist.html */
+
+/* styles for body tag in postslist*/
+body {
+    background-color: #ffeedd;
+    overflow:auto;
+}
+
+/* styles for post container section */
+.allPostsContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+/* styles for each post displayed on the screen */
+.post {
+    position: relative;
+    width: 44%;
+    height: 8%;
+    background: #fff;
+    margin: 10px 10px 10px 20px;
+    float:left;
+    border-radius: 10px;
+    box-shadow:0 4px 10px 0 rgba(17, 4, 63, 0.2),0 4px 20px 0 rgba(79, 19, 97, 0.19);
+}
+
+/* background highlight for each post on mouse-over */
+.post:hover {
+    box-shadow:0 4px 20px 0 rgba(11, 6, 22, 0.4),0 4px 20px 0 rgba(35, 60, 119, 0.39);
+}
+
+/* styles for left section of the post */
+.post-left {
+    width: 12%;
+    max-width: 12%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold;
+    color: #000;
+}
+
+/* styles for Post Content display */
+.post-content {
+    width: 88%;
+    display: table-cell;
+    text-align: left;
+    background-color: #E8E8E8;
+    color: #000000;
+    border-radius: 10 15px 15px 10;
+    padding: 0 10px;
+}
+
+/* styles for Post Title display */
+.post-title{
+    font-family: 'Crimson Pro', serif;
+    font-weight: bold;
+    color: #999b99;
+    font-size: 20px;
+    height: 10%;
+    display:block;
+    width: 90%;
+}
+
+/* styles for post description */
+.post-desc{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 55px;
+    margin-bottom: 0 !important;
+    overflow: hidden;
+    position: relative;
+    display:block;
+}
+
+/* styles for trash icon on the post*/
+.trash{
+    position: absolute;
+    margin: 15px 5px 10px 10px;
+    right: 1%;
+    top : 5%;
+    color: gray;
+}
+
+/* extra styles for trash icon */
+.trash:hover {
+    cursor: pointer;
+}
+
+/* styles for ellipsis icon */
+.ellipsisIcon {
+    position: relative;
+    margin: 10px 5px 10px 10px;
+    float: right;
+}
+
+/* extra styles for ellipsis icon */
+.ellipsisIcon:hover {
+    cursor: pointer;
+}
+
+/* style for Trash modal screen section */
+#trash-modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    z-index: 1;
+}
+
+/* style for Trash modal content section */
+.trash-modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 20rem;
+    height: 8rem;
+    padding: 15px 15px;
+    border: none;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* style for Trash modal body section */
+.trash-modal-body {
+    color: #000;
+    padding: 10px;
+}
+
+/* style for confirmation test on Trash modal screen section */
+.confirm {
+    font-family:  Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* styles for button in Trash modal screen section */
+.btn {
+    color: #fff;
+    background: #60c7c1;
+    text-decoration: none;
+    transition: all 0.4s;
+    line-height: normal;
+    min-width: 100px;
+    border: none;
+    min-height: 40px;
+    margin: 1px 5px;
+    outline: none !important;
+    font-size: 12px;
+}
+.btn-info {
+    background: #88be88;
+    float: left;
+}
+.btn-info:hover,.btn-info:focus {
+    background: #03a353;
+    cursor: pointer;
+}
+.btn-danger {
+    background: #c77f7f;
+    float: right;
+}
+.btn-danger:hover, .btn-danger:focus {
+    background: #a10909;
+    cursor: pointer;
+}
+
+/* End of styles for postlist.css */
